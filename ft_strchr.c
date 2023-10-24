@@ -5,14 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 16:21:15 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/21 13:02:58 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/24 16:51:40 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/24 16:54:44 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-char *ft_strchr(const char *s, int c#include"libft.h"
-		
-	
-		char *ft_strchr(const char *s, int c))
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	if ((char)c == '\0')
+		return ((char *)s);
+	return (NULL);
+}
