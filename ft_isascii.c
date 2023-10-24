@@ -5,30 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/19 12:52:09 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/12 12:44:21 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/10 13:08:31 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/10 13:14:38 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include"libft.h"
 
-int	ft_isascii(int c)
+int	ft_isacii(int c)
 {
-	if (c >= 0 && c <= 127)
+	if (c >= '0' && c <= '127')
 		return (1);
 	return (0);
-}
-
-int main()
-{
-    int ch1 = 'A'; 
-    int ch2 = 128; 
-
-    int resultado1 = ft_isascii(ch1);
-    int resultado2 = ft_isascii(ch2); 
-
-    printf("%c = %d\n", ch1, resultado1);
-    printf("%c = %d\n", ch2, resultado2);
-
-    return 0;
 }

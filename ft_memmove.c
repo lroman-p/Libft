@@ -5,12 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 15:36:18 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/21 10:58:31 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/21 11:03:33 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/21 11:10:45 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include<stdio.h>
+#include"libft.h"
 
 void	*ft_memmove(void *dst, const void *scr, size_t len)
 {
@@ -25,21 +24,7 @@ void	*ft_memmove(void *dst, const void *scr, size_t len)
 		while (len --)
 			*d++ = *s++;
 	else
-		while (len--)
+		while (len --)
 			d[len] = s[len];
 	return (dst);
-}
-int	main (void)
-{
-	char	s[] = "42madrid";
-	char	d[9];
-
-	printf("%s\n", ((char*) ft_memmove(d, s, 8)));
-	printf("%s\n", s);
-	printf("%s\n", d);
-	printf("%p\n", s);
-	printf("%p\n", d);
-	printf("%ld\n", d - s);
-	printf("%ld\n", s - d);
-	return (0);	
 }

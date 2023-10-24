@@ -5,22 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 12:10:09 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/24 16:06:52 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/21 12:30:37 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/21 12:57:16 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdio.h>
+#include"libft.h"
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 		return (c += 32);
 	return (c);
-}
-
-int	main(void)
-{
-	char	c = 'M';
-	printf("%c", ft_tolower(c));
-	return (0);
 }

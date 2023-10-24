@@ -5,11 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/22 14:56:21 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/21 12:47:23 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/21 12:42:52 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/21 12:47:16 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include"libft.h"
 #include<stdio.h>
 
 int	ft_toupper(int c)
@@ -17,11 +17,4 @@ int	ft_toupper(int c)
 	if (c >= 'a' && c <= 'z')
 		return (c -= 32);
 	return (c);
-}
-
-int	main(void)
-{
-	char	c = 'm';
-	printf("%c", ft_toupper(c));
-	return (0);
 }
