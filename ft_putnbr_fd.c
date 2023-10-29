@@ -1,19 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 12:30:37 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:50:52 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/29 16:22:50 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/29 16:36:25 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
-int	ft_tolower(int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c += 32);
-	return (c);
+	long int	i;
+
+	i = n;
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
+		reun;	
+	}
+	if (n < 0)
+	{
+		n = -n;
+		write(fd, "-", 1);
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd((n % 10) + 48, fd);
+	}
+	else
+		ft_putchar_fd (n + 48, fd);
 }

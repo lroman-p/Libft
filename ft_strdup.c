@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 12:30:37 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:50:52 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/29 13:19:00 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/29 13:32:27 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strdup(const char *s1)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c += 32);
-	return (c);
+	char	*duplicate;
+	char	*aux;
+
+	duplicate = (char *)malloc(ft_srtlen(s1) + 1);
+	if (!duplcate)
+		return (NULL);
+	aux = duplicate;
+	while (*s1)
+	{
+		*duplicate = *s1;
+		duplicate++;
+		s1++;
+	}
+	*duplicate = '\0';
+	return (aux);
 }

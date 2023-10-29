@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 13:50:40 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:45:05 by lroman-p         ###   ########.fr       */
+/*   Created: 2023/10/29 13:33:12 by lroman-p          #+#    #+#             */
+/*   Updated: 2023/10/29 13:44:49 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
-void	*ft_memset(void *b,	int c,	size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
+	char	*new_str;
 	size_t	i;
+	size_t	j;
 
-	i = 0;
-	while (i < len)
-	{
-		((unsigned char *)b)[i] = c;
-		i++;
-	}
-	return (b);
+	new_str = NULL;
+	if (!*s || ft_strlen(s) <= start)
+		return (ft_strdup("\0"));
+	if (ft_strlen(s + start) <= len)
+		len = ft_strlen(s + start);
+	new_str = (char *)malloc(len +1);
+	if (!new_str)
+		return (NULL);
+	i = start;
+	j = 0;
+	while (i < ft_strlen(s) && j < len)
+		new_str[j++] = s[i++];
+	new_str[j] = '\0';
+	return (new_str);
 }
