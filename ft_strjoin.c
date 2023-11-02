@@ -6,7 +6,7 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 13:46:10 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 14:02:56 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/02 12:16:09 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	a = i;
 	i = 0;
-	while (b--);
+	while (b--)
 		str[a++] = s2[i++];
 	str[a] = '\0';
 	return (str);

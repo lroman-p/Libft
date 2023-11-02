@@ -6,7 +6,7 @@
 #    By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/08 14:08:01 by lroman-p          #+#    #+#              #
-#    Updated: 2023/10/29 12:28:09 by lroman-p         ###   ########.fr        #
+#    Updated: 2023/11/02 13:32:51 by lroman-p         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,4 +54,4 @@ Fclean:	clean
 
 re:	fclean	bonus
 
-.PHONY:	all	clean	fclean	re	bonus	rebonus
+.PHONY:	all	clean	fclean	re	bonus	

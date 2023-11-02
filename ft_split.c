@@ -6,7 +6,7 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 14:13:46 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 15:26:49 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/02 12:13:40 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	**ft_split(char const *s, char c)
 	j = -1;
 	while (++j < wordcount (s, c))
 	{
-		while (s[start] == c);
+		while (s[start] == c)
 		matrix[j] = ft_substr(s, start, wordsize);
 		if (!matrix[j])
 			return (ft_free(j, matrix), NULL);
