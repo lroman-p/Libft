@@ -6,19 +6,19 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 11:03:33 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:47:24 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/04 16:33:17 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
 
-void	*ft_memmove(void *dst, const void *scr, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*d;
 	unsigned char	*s;
 
-	s = (unsigned char *)scr;
+	s = (unsigned char *)src;
 	d = (unsigned char *)dst;
-	if (dst == scr || len)
+	if (dst == src || !len)
 		return (dst);
 	if (d < s)
 		while (len --)
