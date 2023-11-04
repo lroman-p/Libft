@@ -6,7 +6,7 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 13:19:00 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 13:32:27 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/04 14:33:01 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_strdup(const char *s1)
 	char	*duplicate;
 	char	*aux;
 
-	duplicate = (char *)malloc(ft_srtlen(s1) + 1);
-	if (!duplcate)
+	duplicate = (char *)malloc(ft_strlen(s1) + 1);
+	if (!duplicate)
 		return (NULL);
 	aux = duplicate;
 	while (*s1)

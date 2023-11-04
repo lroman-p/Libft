@@ -6,7 +6,7 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 14:13:46 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/02 12:13:40 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/04 15:17:46 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static	size_t	wordlen(char const *s, char c)
 	return (size);
 }
 
-static	void	ft_free(size_t i; char **str)
+static	void	ft_free(size_t i, char **str)
 {
 	while (i > 0)
 	{
@@ -73,6 +73,8 @@ char	**ft_split(char const *s, char c)
 	while (++j < wordcount (s, c))
 	{
 		while (s[start] == c)
+			start++;
+		wordsize = wordlen(s + start, c);
 		matrix[j] = ft_substr(s, start, wordsize);
 		if (!matrix[j])
 			return (ft_free(j, matrix), NULL);
