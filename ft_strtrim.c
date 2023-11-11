@@ -6,7 +6,7 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 14:03:10 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/04 14:41:02 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/11 12:14:22 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (0);
-	while (*s1 && ft_strchr(set, (int)s1))
+	while (*s1 && ft_strchr (set, *s1))
 		s1++;
 	i = ft_strlen(s1);
 	while (i && ft_strchr(set, s1[i]))
-		i--;
+	i--;
 	return (ft_substr(s1, 0, i + 1));
 }
