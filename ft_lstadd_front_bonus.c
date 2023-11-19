@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:07:20 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/04 15:21:42 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:45:09 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

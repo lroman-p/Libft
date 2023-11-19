@@ -6,10 +6,10 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 12:42:52 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:50:08 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 14:01:06 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include"libft.h"
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

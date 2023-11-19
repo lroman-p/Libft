@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 16:02:43 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 16:03:29 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:57:32 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

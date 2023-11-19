@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 16:37:54 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 16:45:26 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:40:55 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

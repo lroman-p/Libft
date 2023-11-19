@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 14:13:46 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/04 15:17:46 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:56:34 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 static	size_t	wordcount(char const *s, char c)
 {

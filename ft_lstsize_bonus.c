@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:14:07 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/11 12:18:27 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:47:30 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

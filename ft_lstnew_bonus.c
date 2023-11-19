@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:29:37 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/04 15:34:59 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:47:13 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 t_list	*ft_lstnew(void	*content)
 {

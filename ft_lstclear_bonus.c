@@ -6,11 +6,11 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:25:00 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/11/02 17:31:31 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:45:31 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 

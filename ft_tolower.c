@@ -6,10 +6,10 @@
 /*   By: lroman-p <lroman-p@student.42.madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 12:30:37 by lroman-p          #+#    #+#             */
-/*   Updated: 2023/10/29 12:50:52 by lroman-p         ###   ########.fr       */
+/*   Updated: 2023/11/19 14:00:47 by lroman-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include"libft.h"
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
