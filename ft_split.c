@@ -54,7 +54,18 @@ static	void	ft_free(size_t i, char **str)
 		free(*(str + i));
 	}
 	free(str);
-}
+	+//
+		static void	*ft_free(size_t i, char **str)
+{
+	while (i > 0)
+	{
+		i--;
+		free(*(str + i));
+	}
+	free(str);
+	return (NULL);
+}*//
+
 
 char	**ft_split(char const *s, char c)
 {
