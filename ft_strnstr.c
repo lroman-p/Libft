@@ -37,3 +37,35 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+*//
+#include "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	h;
+	size_t	j;
+
+	h = 0;
+	if (!haystack && len == 0)
+		return ((char *)haystack);
+	if (!*needle)
+		return ((char *)haystack);
+	while (haystack[h] != '\0' && h < len)
+	{
+		if (haystack[h] == needle[0])
+		{
+			j = 0;
+			while ((needle[j] != '\0'
+					&& haystack[h + j] == needle[j] && (h + j) < len))
+			{
+				if (needle[j + 1] == '\0')
+					return ((char *)haystack + h);
+				j++;
+			}
+		}
+		h++;
+	}
+	return (NULL);
+}
+//*
