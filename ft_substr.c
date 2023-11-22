@@ -37,3 +37,4 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	new_str[j] = '\0';
 	return (new_str);
 }
+
